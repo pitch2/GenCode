@@ -1,9 +1,10 @@
-from tkinter import *
-from tkinter import ttk
-import tkinter as tk
-
 import secrets
 import string 
+from hashlib import sha256
+
+def hachage(ch):
+    return sha256(ch.encode()).hexdigest()
+
 
 def gencode():
 
@@ -136,6 +137,19 @@ def gencode():
         f = open("mdp.txt", "a")
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+str(pwd)+"\n")
+
+        f.close()
+
+#-----hach--------#
+        f =open("mdp_hach.txt" , "r")
+        contenu = f.read()
+        f.close()
+        mots = contenu.split("\n")
+
+
+        f = open("mdp_hach.txt", "a")
+        f.write("nom du site: "+str(nom_site))
+        f.write(" | code: "+hachage(str(pwd))+"\n")
 
         f.close()
     
