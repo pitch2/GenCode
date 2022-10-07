@@ -11,8 +11,9 @@ def gencode():
     
     nom_site= input("Saisir le nom du site: ")
     
-    print("1- vous même")    
-    print("2- automatique")
+    print("Voulez-vous un code:")
+    print("     1- de vous même")    
+    print("     2- automatique")
     
     choix= int(input("Choix: "))
     
@@ -52,7 +53,7 @@ def gencode():
 
     
 
-        long = int(input("\n Longueur du mots de passe désiré: "))    
+        long = int(input("\nLongueur du mots de passe désiré: "))    
 
         if long>=9:
             print("Le mot de passe est fort")
@@ -63,6 +64,9 @@ def gencode():
                 print("Le mot de passe est faible")
         else:
             return gencode()
+        
+        
+        
 
         for _ in range(2):
             print("\n")
@@ -116,15 +120,13 @@ def gencode():
                     return gencode()
             
             print(pwd)
+            
 
         else:
             print("Le nombre de caractères doit être supérieur ou égale à 1")
             for _ in range(10):
                 print("| | | | | | | |")
             return gencode()
-        
-        
-        
         
         
 
