@@ -6,3 +6,5 @@ Pour utiliser, installer python ainsi que les modules demandé (intégré à pyt
 Créé un fichier mdp.txt sur le même répertoire que le fichier le code python.
 
 Le code est prêt à être exécuter.
+
+Ceci est mon premier gros projet en python soiyer indulgent
