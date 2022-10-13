@@ -1,3 +1,4 @@
+
 class gencode():
     print("Bonjour, pour utilisé le service GenCode vous devez passer par cette étape")
     print("Voulez-vous initialisé le service")
