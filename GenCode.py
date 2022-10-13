@@ -1,6 +1,11 @@
 import secrets
 import string 
 from hashlib import sha256
+#module perso#
+from crypt import crypt
+from crypt import decrypt
+
+
 
 def hachage(ch):
     return sha256(ch.encode()).hexdigest()
@@ -8,9 +13,9 @@ def hachage(ch):
 
 def gencode():
 
-    
+        
     nom_site= input("Saisir le nom du site: ")
-    
+
     print("Voulez-vous un code:")
     print("     1- de vous même")    
     print("     2- automatique")
@@ -21,14 +26,12 @@ def gencode():
         pwd=input("Saisir le mdp :")
         
         f =open("mdp.txt" , "r")
-        contenu = f.read()
         f.close()
-        mots = contenu.split("\n")
 
 
         f = open("mdp.txt", "a")
         f.write("nom du site: "+str(nom_site))
-        f.write(" | code: "+str(pwd)+"\n")
+        f.write(" | code: "+str((list(pwd.strip())))+"\n")
 
         f.close()
         
@@ -64,7 +67,6 @@ def gencode():
                 print("Le mot de passe est faible")
         else:
             return gencode()
-        
         
         
 
@@ -131,31 +133,28 @@ def gencode():
         
 
         f =open("mdp.txt" , "r")
-        contenu = f.read()
         f.close()
-        mots = contenu.split("\n")
-
 
         f = open("mdp.txt", "a")
         f.write("nom du site: "+str(nom_site))
-        f.write(" | code: "+str(pwd)+"\n")
-
+        f.write(" | code: "+str((list(pwd.strip())))+"\n")
         f.close()
 
 #-----hach--------#
         f =open("mdp_hach.txt" , "r")
-        contenu = f.read()
         f.close()
-        mots = contenu.split("\n")
-
-
         f = open("mdp_hach.txt", "a")
+        
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+hachage(str(pwd))+"\n")
-
         f.close()
     
-    
+    else:
+        print("Le choix doit 1 ou 2")
+        for _ in range(10):
+            print("| | | | | | | |")
+        return gencode()        
+
     for _ in range(3):
         print("\n")
     print("Le code ainsi que le nom du site on été ecris dans le fichier mdp \n")
@@ -170,8 +169,8 @@ def gencode():
         print("A bientôt")
     elif choix_cont==3:
         print("...")
+        #--à completer--#
     else:
         print("A bientôt")
-    
-
+        
 
