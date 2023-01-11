@@ -1,17 +1,11 @@
 import secrets
 import string 
-from hashlib import sha256
+
 #module perso#
-from crypt import crypt
-from crypt import decrypt
+from crypt import cryptage
+from crypt import decryptage
 
-
-crypt()
-decrypt()
-
-def hachage(ch):
-    return sha256(ch.encode()).hexdigest()
-
+    
 
 def gencode():
 
@@ -139,17 +133,10 @@ def gencode():
 
         f = open("mdp.txt", "a")
         f.write("nom du site: "+str(nom_site))
-        f.write(" | code: "+str((list(pwd.strip())))+"\n")
+        f.write(" | code: "+str(pwd))
         f.close()
 
-#-----hach--------#
-        f =open("mdp_hach.txt" , "r")
-        f.close()
-        f = open("mdp_hach.txt", "a")
-        
-        f.write("nom du site: "+str(nom_site))
-        f.write(" | code: "+hachage(str(pwd))+"\n")
-        f.close()
+# list(pwd.strip())))+"\n")
     
     else:
         print("Le choix doit 1 ou 2")

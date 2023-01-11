@@ -11,8 +11,6 @@ class gencode():
     if choix_creation==1:
         f =open("mdp.txt" , "x")
         f.close
-        f =open("mdp_hach.txt" , "x")
-        f.close
         print("L'initialisation du service est faite, vous pouvez fermer la console, et supprimé ce programme vous pouvez desormais utlise GenCode")
         #--à completer (explication)--#
         
