@@ -4,15 +4,9 @@ import string
 
 #module perso#
 from cryptage import *
-from premiereutilisation import cryptage_first
-from premiereutilisation import decryptage_first
-
 
 
 def gencode():
-
-
-
 
     nom_site= input("Saisir le nom du site: ")
 
@@ -166,6 +160,10 @@ def gencode():
     elif choix_cont==3:
         print("...")
         #--à completer--#
+
+    elif choix_cont==4:
+        decryptage()
+        print("Vos mots de passe sont dans le fichier mdp.txt ")
 
     else:
         print("A bientôt")
