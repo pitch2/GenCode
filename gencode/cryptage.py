@@ -15,8 +15,6 @@ def cryptage():
      encrypted = f.encrypt(original)
      with open ('motdepasse.txt', 'wb') as encrypted_file:
           encrypted_file.write(encrypted)
-     with open("mdp.txt", "w") as file:
-            file.truncate()
 
 def decryptage():
     f = Fernet(key)
@@ -25,8 +23,7 @@ def decryptage():
     decrypted = f.decrypt(encrypted)
     with open('mdp.txt', 'wb') as decrypted_file:
         decrypted_file.write(decrypted)
-    with open("motdepasse.txt", "w") as file:
-        file.truncate()
+
 
 
 ####
@@ -52,6 +49,3 @@ def decryptage_first():
         decrypted_file.write(decrypted)
     with open("mdp_archive.txt", "w") as file:
         file.truncate()
-
-
-

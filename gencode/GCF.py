@@ -1,12 +1,12 @@
 import secrets
 import string 
 
-
 #module perso#
 from cryptage import *
 
 
 def gencode():
+    pwd=''
 
     nom_site= input("Saisir le nom du site: ")
 
@@ -32,7 +32,6 @@ def gencode():
     
     
 
-        pwd=''
         letters = string.ascii_letters
         digits = string.digits
         special_chars = string.punctuation
@@ -133,6 +132,7 @@ def gencode():
         f.close()
 
         cryptage()
+        neto()
 
 
 
@@ -148,7 +148,7 @@ def gencode():
     print("Voulez vous resaisir un code ?")
     print("     1-Oui")
     print("     2-Non")
-    print("     3-Information sur le code et autre")
+    print("     3-Information sur le code et autre")    
     print("     4-Je veux lire tous mes mots de passe")
     choix_cont=int(input("Votre choix: "))
     if choix_cont==1:
@@ -164,11 +164,17 @@ def gencode():
     elif choix_cont==4:
         decryptage()
         print("Vos mots de passe sont dans le fichier mdp.txt ")
-
+        print("Pour le bon fonctionnement du programmme, et pour la sécurité de vos mots de passe, nous devons resécurisé vos mots de passe")
+        print("     1-J'ai fini")
+        choix_cryptage_fin=int(input("Votre choix : "))
+        if choix_cryptage_fin==1:
+            neto()
+            print("A bientôt")
     else:
         print("A bientôt")
+    
 
-
-
-
+def neto():
+    with open("mdp.txt", "w") as file:
+        file.truncate()
 
