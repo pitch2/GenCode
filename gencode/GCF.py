@@ -4,6 +4,8 @@ import string
 #module perso
 from cryptage import *
 
+with open('unlock.key', 'rb') as unlock:
+     key = unlock.read()
 
 def gencode():
     decryptage()
