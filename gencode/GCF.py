@@ -1,11 +1,14 @@
 import secrets
 import string 
 
-#module perso#
+#module perso
 from cryptage import *
 
 
 def gencode():
+    decryptage()
+    neto_mot()
+
     pwd=''
 
     nom_site= input("Saisir le nom du site: ")
@@ -27,6 +30,9 @@ def gencode():
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+str(pwd))
         f.close()
+
+        cryptage()
+        neto()
         
     elif choix==2:
     
@@ -129,6 +135,7 @@ def gencode():
         f = open("mdp.txt", "a")
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+str(pwd))
+        f.write("\nxxx\n")
         f.close()
 
         cryptage()
@@ -161,8 +168,8 @@ def gencode():
         print("...")
         #--à completer--#
 
+
     elif choix_cont==4:
-        decryptage()
         print("Vos mots de passe sont dans le fichier mdp.txt ")
         print("Pour le bon fonctionnement du programmme, et pour la sécurité de vos mots de passe, nous devons resécurisé vos mots de passe")
         print("     1-J'ai fini")
@@ -172,9 +179,14 @@ def gencode():
             print("A bientôt")
     else:
         print("A bientôt")
-    
+
+ 
 
 def neto():
     with open("mdp.txt", "w") as file:
         file.truncate()
 
+
+def neto_mot():
+    with open("motdepasse.txt", "w") as file:
+        file.truncate()

@@ -6,3 +6,6 @@ def crypt():
 
 def decrypt():
     decryptage()
+
+
+
