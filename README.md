@@ -6,4 +6,8 @@ Ceci est mon premier gros projet en python soiyer indulgent
 
 Pour utilisé ce programme il vous faudras le module cryptographie:
 
-pip install cryptographie
+You can install ``cryptography`` with:
+
+.. code-block:: console
+
+    $ pip install cryptography
