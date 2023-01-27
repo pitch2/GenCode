@@ -1,5 +1,5 @@
 import secrets
-import string 
+import string
 
 #module perso
 from cryptage import *
@@ -7,11 +7,15 @@ from cryptage import *
 with open('unlock.key', 'rb') as unlock:
      key = unlock.read()
 
+
+
 def gencode():
+    cryptage()
     decryptage()
     neto_mot()
 
-    pwd=''
+    
+    pwd = ''
 
     nom_site= input("Saisir le nom du site: ")
 
@@ -25,10 +29,10 @@ def gencode():
 
         pwd=input("Saisir le mdp :")
         
-        f =open("mdp.txt" , "r")
+        f =open("vosmotsdepasse.txt" , "r")
         f.close()
 
-        f = open("mdp.txt", "a")
+        f = open("vosmotsdepasse.txt", "a")
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+str(pwd))
         f.close()
@@ -131,10 +135,10 @@ def gencode():
         
         
 
-        f =open("mdp.txt" , "r")
+        f =open("vosmotsdepasse.txt" , "r")
         f.close()
 
-        f = open("mdp.txt", "a")
+        f = open("vosmotsdepasse.txt", "a")
         f.write("nom du site: "+str(nom_site))
         f.write(" | code: "+str(pwd))
         f.write("\nxxx\n")
@@ -172,7 +176,7 @@ def gencode():
 
 
     elif choix_cont==4:
-        print("Vos mots de passe sont dans le fichier mdp.txt ")
+        print("Vos mots de passe sont dans le fichier vosmotsdepasse.txt ")
         print("Pour le bon fonctionnement du programmme, et pour la sécurité de vos mots de passe, nous devons resécurisé vos mots de passe")
         print("     1-J'ai fini")
         choix_cryptage_fin=int(input("Votre choix : "))
@@ -181,14 +185,16 @@ def gencode():
             print("A bientôt")
     else:
         print("A bientôt")
+        neto()
 
  
 
 def neto():
-    with open("mdp.txt", "w") as file:
+    with open("vosmotsdepasse.txt", "w") as file:
         file.truncate()
 
 
 def neto_mot():
-    with open("motdepasse.txt", "w") as file:
+    with open("vmpd_crypté.txt", "w") as file:
         file.truncate()
+
