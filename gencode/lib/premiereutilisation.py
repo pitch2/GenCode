@@ -1,12 +1,17 @@
 import secrets
 import string
 from cryptography.fernet import Fernet
-from cry.cryptage import *
 
 key = Fernet.generate_key()
 with open('unlock.key', 'wb') as unlock:
     unlock.write(key)
-    
+
+#avant et module de crypt après
+#car la création de la clé doit être avant sinon erreur
+from cryptage import cryptage
+from cryptage import decryptage
+
+
 
 
 letters = string.ascii_letters
@@ -82,6 +87,4 @@ def premier_demarrage():
 
 
 premier_demarrage()
-
-
 

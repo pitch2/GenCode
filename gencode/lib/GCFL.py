@@ -1,6 +1,6 @@
 import secrets
 import string
-from cry.cryptage import *
+from cryptage import *
 #module perso
 
 
