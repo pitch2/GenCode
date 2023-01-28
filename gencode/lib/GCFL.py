@@ -1,8 +1,7 @@
 import secrets
 import string
-
+from cry.cryptage import *
 #module perso
-from cryptage import *
 
 
 def neto():

@@ -1,4 +1,4 @@
-from GCF import gencode
+from lib.GCF import gencode
 
  
 gencode()

@@ -1,4 +1,3 @@
-
 from cryptography.fernet import Fernet
 
 with open('unlock.key', 'rb') as unlock:

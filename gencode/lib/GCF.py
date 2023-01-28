@@ -1,8 +1,7 @@
 import secrets
 import string
-
+from cry.cryptage import *
 #module perso
-from cryptage import *
 
 with open('unlock.key', 'rb') as unlock:
      key = unlock.read()
@@ -22,7 +21,6 @@ def gencode():
     print("Voulez-vous un code:")
     print("     1- de vous même")    
     print("     2- automatique")
-    
     choix= int(input("Choix: "))
     
     if choix==1:

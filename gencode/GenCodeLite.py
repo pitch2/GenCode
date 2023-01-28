@@ -1,4 +1,4 @@
-from GCFL import gencode_lite
+from lib.GCFL import gencode_lite
 
 
 gencode_lite()
