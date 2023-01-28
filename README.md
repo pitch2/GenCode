@@ -6,6 +6,6 @@ Ceci est mon premier gros projet en python soiyer indulgent
 
 Pour utilisé ce programme il vous faudras le module ``cryptography``:
 
->    $ pip install cryptography
+    $ pip install cryptography
 
 Pour la première utilisation il faut utilisé le programme <b>Première_Utilisation<b>
