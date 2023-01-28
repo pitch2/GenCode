@@ -4,7 +4,7 @@ Ce script python génère un mot de passe d'une longueur et d'un niveau de compl
 
 Ceci est mon premier gros projet en python soiyer indulgent
 
-Pour utilisé ce programme il vous faudras le module ``cryptographie``:
+Pour utilisé ce programme il vous faudras le module ``cryptography``:
 
 
     $ pip install cryptography
