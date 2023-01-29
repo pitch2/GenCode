@@ -1,4 +1,4 @@
-from lib.GCFL import gencode_lite
+from GCFL import lancer
 
 
-gencode_lite()
+lancer()

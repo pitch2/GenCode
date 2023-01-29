@@ -1,4 +1,4 @@
-from lib.premiereutilisation import *
+from premiereutilisation import *
 
 
 lancer()
