@@ -34,5 +34,6 @@ String et Secrets sont normalement installé avec python automatique :
 
 **Problèmes**
 Si vous avez des problèmes au moment de l'utilisation du programme un site à été pour tous les [problèmes](##).
-Un programme est disponible pour récuperer tous les mots de passe dans un autre fichier.
+Un programme est disponible pour récuperer tous les mots de passe dans un autre fichier : [lien](https://www.mediafire.com/file/1wc63o3lwlnpz2q/Récupération.py/file).
+Vous devrez mettre ce fichier dans le même dossier que GenCode.
 
