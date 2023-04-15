@@ -45,7 +45,7 @@ Il y a toujours un bug d'ecriture qui efface les anciens mots de passes dans un 
 
 
 
-
+###  Liste des prochaines features :
 
 - [ ] Refaire le scrypt GCF pour fonctionner avec les nouveaux cryptages et fonctionne avec GardeCode
 - [ ] Faire le nettoyage dans les versions et dans les codes
