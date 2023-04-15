@@ -42,3 +42,13 @@ Vous devrez mettre ce fichier dans le même dossier que GenCode.
 
 **Bug**
 Il y a toujours un bug d'ecriture qui efface les anciens mots de passes dans un certain cas
+
+
+
+
+
+- [ ] Refaire le scrypt GCF pour fonctionner avec les nouveaux cryptages et fonctionne avec GardeCode
+- [ ] Faire le nettoyage dans les versions et dans les codes
+- [ ] Faire un nouvel outils ( aucune idée pour l'instant)
+- [ ] Fin total du programme -> adaptation pour une interface graphique HTML
+
