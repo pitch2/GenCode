@@ -33,7 +33,7 @@ Vous devrez mettre ce fichier dans le même dossier que GenCode.
 
 
 **Bug**
-Il y a toujours un bug d'ecriture qui efface les anciens mots de passes dans un certain cas
+Aucun à connu pour l'instant
 
 
 
