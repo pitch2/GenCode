@@ -17,14 +17,6 @@ String et Secrets sont normalement installé avec python automatique :
     
 #### Guide d'utilisation du module GenCode
 
-**Initialisation**
-*   Lancer le programme "Première_Utilisation".
-*   Vous faites ```Oui``` ensuite, 3 fichiers seronts crée dans votre repertoire il y aura 
-    *   vosmotsdepasse.txt
-    *   vmpd_crypté.txt
-    *   unlock.key
-    *   vous ne devez pas toucher à ces 3 fichiers, sinon vous risquez de perdre toutes vos données
-*   Vous pouvez fermer la/les fênetres
 
 **Utilisation**
 *   Vous pouvez maintenant lancer le programme "*GenCode*" ou "*GenCodeLite*".
