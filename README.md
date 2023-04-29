@@ -39,8 +39,8 @@ Vous devrez mettre ce fichier dans le même dossier que GenCode.
 **Bug**
 Aucun à connu pour l'instant
 
-Ce module peut être connecté avec GardeCode un autre module sur mon github 
-[GardeCode](https://github.com/pitch2/GardeCode)
+
+Ce module peut être connecté avec [GardeCode](https://github.com/pitch2/GardeCode) un autre module sur mon github 
 
 ###  Liste des prochaines features :
 
