@@ -1,4 +1,0 @@
-from premiereutilisation import *
-
-
-lancer()
