@@ -44,9 +44,15 @@ Ce module peut être connecté avec [GardeCode](https://github.com/pitch2/GardeC
 
 ###  Liste des prochaines features :
 
-- [x] Refaire le scrypt GCF pour fonctionner avec les nouveaux cryptages et fonctionne avec GardeCode
-- [x] Faire le nettoyage dans les versions et dans les codes
-- [ ] Faire un nouvel outils ( aucune idée pour l'instant)
-- [ ] Adapté à un framework (Flask)
+- [ ] Refaire readme de chacunes des parties
+
+---
+
+Les autres parties de GenCode : 
+
+- [GenCode Web](https://github.com/pitch2/GenCodeWeb)
+- [GardeCode](https://github.com/pitch2/GardeCode)
+- [GenCodeLite](https://github.com/pitch2/GenCode) (intégré à GenCode)
+- [GenCodePack](https://github.com/pitch2/GenCodePack) (regroupe tous les outils qui fonctionnes ensemble)
 
 
