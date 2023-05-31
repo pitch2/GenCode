@@ -29,25 +29,25 @@ This set of programs allows you to generate, save, and manage your passwords, as
 
 ## Tutorials for each service :
 
-#### Pour GenCode (les versions python)
+#### For GenCode (Python version)
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, if there are no issues, everything should be displayed in the command prompt. For the Lite version, it will be a graphical interface.
 
-#### Pour GenCode (les version web) 
+#### For GenCode (Web version) 
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
 
-#### Pour GardeCode (version python)
+#### For GardeCode (Python version)
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and a CMD window will open for the program. 
 
-#### Pour GardeCode (version web)
+#### For GardeCode (Web version)
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
