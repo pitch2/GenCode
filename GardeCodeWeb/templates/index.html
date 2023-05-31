@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GardeCode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            background-color: rgb(2, 2, 36);
+        }
+
+        .formulaire {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .titre {
+            color: white;
+            font-family: 'Instrument Serif', serif;
+            font-size: xx-large;
+            text-decoration: none;
+        }
+
+        .credit {
+            font-size: large;
+            color: white;
+            margin-top: 500px;
+            font-family: 'Instrument Serif', serif;
+            margin-left: 45%;
+        }
+
+        .demande {
+            color: lightblue;
+        }
+
+        .reponse {
+            color: white;
+        }
+
+        .sub {
+            background-color: rgb(2, 2, 36);
+            color: white;
+            border-color: white;
+            margin-top: 20px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <a class='titre' href="https://github.com/pitch2/GardeCode">GardeCode Web</a>
+    <center>
+        <form action="/lire_mots_de_passes" method="post" class="formulaire">
+            <label for="choix" class="demande">Que voulez-vous faire? </label>
+            <select name="choix" id="choix" class="reponse">
+                <option value="1">Lire tous les mots de passe</option>
+                <option value="2">Chercher une information en particulier</option>
+            </select>
+            <br><br>
+            <div id="choix_type_container">
+                <label for="choix_type" class="demande">Choix:</label>
+                <select name="choix_type" id="choix_type" class="reponse">
+                    <option value="1">Avec le nom du site</option>
+                    <option value="2">Avec un nom d'utilisateur</option>
+                    <option value="3">Avec un mot de passe</option>
+                </select>
+                <br><br>
+            </div>
+            <label for="site" class="demande">Site:</label>
+            <input type="text" name="site" id="site" autocomplete="off" class="reponse">
+            <br><br>
+            <label for="nom_utilisateur" class="demande">Nom utilisateur:</label>
+            <input type="text" name="nom_utilisateur" id="nom_utilisateur" autocomplete="off" class="reponse">
+            <br><br>
+            <label for="mdp" class="demande">Mot de passe:</label>
+            <input type="text" name="mdp" id="mdp" autocomplete="off" class="reponse">
+            <br><br>
+            <input type="submit" value="Submit" class="sub">
+        </form>
+    </center>
+    <div class="credit">By Adrien Pichon 2023</div>
+</body>
+</html>

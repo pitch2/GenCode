@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GenCode</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <a class='titre' href="https://github.com/pitch2/GenCode">GenCode Web</a>
+    <form action="/generate" method="POST" class="formulaire">
+        <div>
+            <label class =  'demande' for="nom_site">Site web :</label>
+            <input class = 'reponse' type="text" name="nom_site" required autocomplete="off">
+        </div>
+        <div>
+            <label class =  'demande' for="id" >Identifiant :</label>
+            <input class = 'reponse' type="text" name="id" required autocomplete="off">
+        </div>
+        <div>
+            <label class =  'demande' for="choix">Type de caractères :</label>
+            <select class = 'reponse' name="choix">
+                <option value="1">Lettres, chiffres et caractères spéciaux</option>
+                <option value="2">Lettres et caractères spéciaux</option>
+                <option value="3">Chiffres et caractères spéciaux</option>
+                <option value="4">Lettres et chiffres</option>
+                <option value="5">Lettres uniquement</option>
+                <option value="6">Chiffres uniquement</option>
+                <option value="7">Caractères spéciaux uniquement</option>
+            </select>
+        </div>
+        <div>
+            <label class =  'demande' for="long">Longueur du mot de passe :</label>
+            <input class = 'reponse' type="number" name="long" required>
+        </div>
+        <button class="sub" type="submit">Générer</button>
+    </form>
+        
+    <div class="credit">By Adrien Pichon 2023</div>
+</body>
+</html>
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+
+<style>
+    *{
+    background-color: rgb(2, 2, 36);
+    }
+
+    .demande{
+        color:lightcyan;
+    }
+
+    .titre{
+        color: white;
+        font-family: 'Instrument Serif', serif;
+        font-size: xx-large;
+        text-decoration:none
+    }
+
+    .reponse{
+        color:white;
+        margin-bottom: 20px;
+   
+    }
+
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        
+    }
+
+    button[type="submit"] {
+        margin-top: 20px;
+        border-radius: 5%;
+    }
+
+
+    .formulaire > div:first-child {
+        margin-top: -20px;
+    }
+
+    .sub{
+        background-color: rgb(2, 2, 36);
+        border-color: white;
+        color:white;
+    }
+
+    .credit{
+        font-size: large;
+        color: white ;
+        margin-top: 500px;
+        font-family: 'Instrument Serif', serif;
+        margin-left:45%;
+    }
+</style>
