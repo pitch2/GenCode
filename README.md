@@ -1,27 +1,25 @@
 # GenCodePack 
 
 
-- GenCodePack
-    - GenCode
-        - GenCode in Python with all options (CMD)
-            - Lite Version with Tkinter
-        - GenCodeWeb (Flask)
-            - GenCodeWeb with encryption
-            - GenCodeWeb without encryption
-    - GardeCode
-        - GardeCode in Python (CMD)
-          - GardeCodeWeb (Flask)
-
-
-<br><br>
-
+- GenCode
+    - GenCode in Python with all options (CMD)
+        - Lite Version with Tkinter
+    - GenCodeWeb (Flask)
+        - GenCodeWeb with encryption
+        - GenCodeWeb without encryption
+- GardeCode
+    - GardeCode in Python (CMD)
+      - GardeCodeWeb (Flask)
+---
 
 To ensure everything works correctly, you need to:
 
     $ pip install cryptography
     $ pip install pyperclip
-    $ pip install flask
-
+    $ pip install flask 
+  or
+  
+    $ pip install -r requirements.txt
 
 If you have a standard Python 3 installation, you only need to install **cryptography**, **pyperclip** and **flask**. Of course, you also need to install [Python](python.org/downloads/).
 
@@ -31,25 +29,25 @@ This set of programs allows you to generate, save, and manage your passwords, as
 
 ## Tutorials for each service :
 
-<u>Pour GenCode (les versions python)</u>
+#### Pour GenCode (les versions python)
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, if there are no issues, everything should be displayed in the command prompt. For the Lite version, it will be a graphical interface.
 
-<u>Pour GenCode (les version web) </u>
+#### Pour GenCode (les version web) 
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
 
-<u>Pour GardeCode (version python)</u>
+#### Pour GardeCode (version python)
 
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and a CMD window will open for the program. 
 
-<u>Pour GardeCode (version web)</u>
+#### Pour GardeCode (version web)
   - Install Python and the pip function
   - Install the necessary modules using ```pip install requirements.txt```
   - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
