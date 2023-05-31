@@ -1,61 +1,82 @@
-# GenCode
-
-[Website](##)
+# GenCodePack 
 
 
-Ce script python génère un mot de passe d'une longueur et d'un niveau de complexité spécifiés par l'utilisateur. L'utilisateur peut choisir de saisir son propre mot de passe ou d'en faire générer automatiquement par le script. Le mot de passe généré est enregistré dans un fichier texte avec le nom du site Web auquel il est destiné. 
-Il utilise également le module Fernet du package de cryptographie pour le cryptage et le décryptage, ainsi que le module secrets pour générer des caractères aléatoires pour le mot de passe.
+- GenCodePack
+    - GenCode
+        - GenCode in Python with all options (CMD)
+            - Lite Version with Tkinter
+        - GenCodeWeb (Flask)
+            - GenCodeWeb with encryption
+            - GenCodeWeb without encryption
+    - GardeCode
+        - GardeCode in Python (CMD)
+          - GardeCodeWeb (Flask)
 
-Pour utilisé ce programme il vous faudras le module ``cryptography`` ainsi que ``secret`` et ``string``, ``Pyperclip``:
+
+<br><br>
+
+
+To ensure everything works correctly, you need to:
 
     $ pip install cryptography
     $ pip install pyperclip
-   
-String et Secrets sont normalement installé avec python automatique :
-*    [String](https://docs.python.org/fr/3/library/string.html)
-*    [Secrets](https://docs.python.org/3/library/secrets.html)
-*    [Pyperclip](https://pypi.org/project/pyperclip/)
-*    [Cryptography](https://cryptography.io/en/latest/fernet/)
-
----
-    
-#### Guide d'utilisation du module GenCode
+    $ pip install flask
 
 
-**Utilisation**
-*   Vous pouvez maintenant lancer le programme "*GenCode*" ou "*GenCodeLite*".
-    *   Le GenCode vous permet d'avoir tous les avantages du programme (visualisation des mots de passe crypté, choix de     complexité...)
-    *   La version GenCodeLite vous permet d'allez vite dans la création de votre nouveau mot de passe. Deux question et il     est crée avec tous les caractères.
-* Vous avez la posibilité de voir vos mots de passe enregistré, à la fin de la fin du programme, tous est indiqué.
+If you have a standard Python 3 installation, you only need to install **cryptography**, **pyperclip** and **flask**. Of course, you also need to install [Python](python.org/downloads/).
 
-**Problèmes**
-Vous pouvez me contactez sur @pichon_adrien sur Instagram pour des potentielles problèmes.
-Un programme est disponible pour récuperer tous les mots de passe dans un autre fichier : [lien](https://www.mediafire.com/file/1wc63o3lwlnpz2q/Récupération.py/file).
-Vous devrez mettre ce fichier dans le même dossier que GenCode.
+This set of programs allows you to generate, save, and manage your passwords, as well as their identifiers and sources. It can be used with a Python IDE. GenCode is the most complete version, the Lite version provides a Tkinter GUI, and the Web version is a locally hosted version thanks to Flask. GardeCode allows you to manage your passwords and to find a password based on an identifier or a website. The version is not yet complete and not yet introduced with Flask.
 
 
 
+## Tutorials for each service :
 
-**Bug**
+<u>Pour GenCode (les versions python)</u>
 
-Aucun connu pour l'instant
+  - Install Python and the pip function
+  - Install the necessary modules using ```pip install requirements.txt```
+  - Double click on the program, if there are no issues, everything should be displayed in the command prompt. For the Lite version, it will be a graphical interface.
+
+<u>Pour GenCode (les version web) </u>
+
+  - Install Python and the pip function
+  - Install the necessary modules using ```pip install requirements.txt```
+  - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
+
+<u>Pour GardeCode (version python)</u>
+
+  - Install Python and the pip function
+  - Install the necessary modules using ```pip install requirements.txt```
+  - Double click on the program, and a CMD window will open for the program. 
+
+<u>Pour GardeCode (version web)</u>
+  - Install Python and the pip function
+  - Install the necessary modules using ```pip install requirements.txt```
+  - Double click on the program, and the website will open automatically. If it doesn't open, click on the IP (127.0.0.1:5000/) written in the CMD.
+
+
+## Bugs :
+- The Python versions may have some issues, but after several tests, there shouldn't be any problems. However, the web version is more stable. No issues have been reported.
+
+
+## Things to know:
+
+
+  - To avoid any issues and not lose your passwords, do not delete the key.key file or the password file.
+  - For everything to work correctly, the key and the files must match. Normally, the organization of the GitHub files should not cause any problems.
+  <br>
+  - If you are not familiar with the field of computer science, I recommend using GenCodeWeb without encryption if it is not necessary. The program guarantees your data, but the decryption key is stored on the computer, so there is a possibility of someone accessing all the data.
 
 
 
-Ce module peut être connecté avec [GardeCode](https://github.com/pitch2/GardeCode) un autre module sur mon github 
+## Credits :
+
+Made 100% by Adrien Pichon, some functions have been corrected by ChatGPT 3 from OpenIA. The beginning of the project dates back to 10/22.
 
 
-###  Liste des prochaines features :
+## Future features :
 
-- [ ] Refaire readme de chacunes des parties
-
----
-
-Les autres parties de GenCode : 
-
-- [GenCode Web](https://github.com/pitch2/GenCodeWeb)
-- [GardeCode](https://github.com/pitch2/GardeCode)
-- [GenCodeLite](https://github.com/pitch2/GenCode) (intégré à GenCode)
-- [GenCodePack](https://github.com/pitch2/GenCodePack) (regroupe tous les outils qui fonctionnes ensemble)
+The next step is to be able to put everything on a web page, manage codes...
+* [ ] Migrate 100% online with servers... (someday if I have the skills)
 
 
