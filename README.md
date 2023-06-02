@@ -76,5 +76,6 @@ Made 100% by Adrien Pichon, some functions have been corrected by ChatGPT 3 from
 
 The next step is to be able to put everything on a web page, manage codes...
 * [ ] Migrate 100% online with servers... (someday if I have the skills)
+* [ ] Make shortcut 
 
 
