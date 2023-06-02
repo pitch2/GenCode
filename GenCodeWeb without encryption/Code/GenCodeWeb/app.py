@@ -70,7 +70,7 @@ def generate_password():
     with open(file_path, "a") as file:
         file.write(informations)
 
-    pyperclip.copy(pwd)
+    # pyperclip.copy(pwd)
 
     return f"Le mot de passe pour {nom_site} est {pwd} et a été copié dans le presse-papiers"
 
