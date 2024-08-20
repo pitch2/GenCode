@@ -69,7 +69,7 @@ This set of programs allows you to generate, save, and manage your passwords, as
 
 ## Credits :
 
-Made 100% by Adrien Pichon, some functions have been corrected by ChatGPT 3 from OpenIA. The beginning of the project dated 22/10/22.
+Made 100% by pitch, some functions have been corrected by ChatGPT 3 from OpenIA. The beginning of the project dated 22/10/22.
 
 
 ## Future features :
